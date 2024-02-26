@@ -19,6 +19,7 @@ app.get('/', async (req, res) =>  {
 app.post('/order', async (req, res) => {
   const { order } = req.body;
   console.log(`${req.socket.remoteAddress} POST /order ${order}`);
+  console.log(`Order: ${JSON.stringify(order)}`);
   res.status(201).json({ created: order });
 });
 
