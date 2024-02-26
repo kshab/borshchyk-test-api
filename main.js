@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get('/', async (req, res) => 
-  console.log(`Hello`);
+  console.log('Hello');
   res.status(200).json({ created: 'test' });
 });
 
